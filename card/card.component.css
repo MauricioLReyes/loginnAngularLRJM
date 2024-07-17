@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: flex-start;    /* Centrar verticalmente */
+  height: 100vh;          /* Altura de la ventana gráfica */
+}
+
+mat-card {
+  padding: 20px;
+  text-align: center;
+}

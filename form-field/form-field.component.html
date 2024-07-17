@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="content">
+    <div>Bienvenido</div>
+    <div class="form-field">
+      <label for="username">Usuario</label>
+      <mat-form-field hintLabel="Maximo 10 caracteres">
+        <mat-label>Nombre de Usuario</mat-label>
+        <input id="username" matInput #input maxlength="10" placeholder="ej: PanchitoPerez2" (input)="onInput($event)" />
+        <mat-hint align="end">{{value().length}}/10</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Correo electrónico</label>
+      <mat-form-field>
+        <mat-label>Correo electrónico</mat-label>
+        <mat-select id="email">
+          <mat-option value="option">adkiadsda.com</mat-option>
+        </mat-select>
+        <mat-hint align="end">Pon un correo valido ^</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
